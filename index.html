@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Net | Always Connected</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="icon" href="{{ asset('img/julianet.ico') }}" type="image/x-icon"> <!-- Menambahkan favicon -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="icon" href="public/img/julianet.ico" type="image/x-icon"> <!-- Menambahkan favicon -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,15 +33,14 @@
         #tentang-kami .row { margin-bottom: 20px; }
     </style>
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('img/julianet-logo.png') }}" alt="Logo" width="200px">
+            <img src="public/img/julianet-logo.png" alt="Logo" width="200px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -71,20 +66,18 @@
     </div>
 </nav>
 
-
-
 <section id="beranda" class="mb-5">
     <div class="container-fluid px-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="../img/wp/wp2.jpg" >
+                    <img class="d-block w-100" src="public/img/wp/wp2.jpg" >
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/wp/wp2.jpg">
+                    <img class="d-block w-100" src="public/img/wp/wp2.jpg">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/wp/wp2.jpg">
+                    <img class="d-block w-100" src="public/img/wp/wp2.jpg">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -145,23 +138,22 @@
     </div>
 </section>
 
+<section class="our-partners">
+     <!-- Judul section -->
+     <h2 style="margin-bottom: 20px;">Our Partners</h2> <!-- Tambahkan margin-bottom untuk memberikan ruang antara judul dan slider -->
+     <div class="slick-slider">
+         <!-- Isi slider dengan gambar-gambar -->
+         <div><img src="public/img/partner/kominfo.png" alt="Xiaomi"></div>
+         <div><img src="public/img/partner/kominfo.png" alt="Huawei"></div>
+         <div><img src="public/img/partner/kominfo.png" alt="Infinix"></div>
+         <div><img src="public/img/partner/kominfo.png" alt="Kominfo"></div>
+         <div><img src="public/img/partner/dana.jpg" alt="Dana"></div>
+         <div><img src="public/img/partner/kominfo.png" alt="BCA"></div>
+         <!-- Tambahkan lebih banyak div jika Anda memiliki lebih banyak gambar -->
+     </div>
+</section>
 
-    <section class="our-partners">
-        <!-- Judul section -->
-        <h2 style="margin-bottom: 20px;">Our Partners</h2> <!-- Tambahkan margin-bottom untuk memberikan ruang antara judul dan slider -->
-        <div class="slick-slider">
-            <!-- Isi slider dengan gambar-gambar -->
-            <div><img src="../img/partner/kominfo.png" alt="Xiaomi"></div>
-            <div><img src="../img/partner/kominfo.png" alt="Huawei"></div>
-            <div><img src="../img/partner/kominfo.png" alt="Infinix"></div>
-            <div><img src="../img/partner/kominfo.png" alt="Kominfo"></div>
-            <div><img src="../img/partner/dana.jpg" alt="Dana"></div>
-            <div><img src="../img/partner/kominfo.png" alt="BCA"></div>
-            <!-- Tambahkan lebih banyak div jika Anda memiliki lebih banyak gambar -->
-        </div>
-    </section>
-
-    <section id="kontak" class="mb-5">
+<section id="kontak" class="mb-5">
     <div class="container px-4">
         <div class="max-w-screen-xl mt-24 mx-auto">
             <div class="grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-8 rounded-lg shadow-lg items-center">
@@ -201,7 +193,7 @@
                 <h2 class="text-left title-with-short-underline" style="font-weight: bold; font-size: 40px; margin-bottom: 30px; color: #206c44;">Jejak Kami</h2>
             <div>
                 <div>
-                    <img src="../img/peta.jpg" alt="Peta Indonesia">
+                    <img src="public/img/peta.jpg" alt="Peta Indonesia">
                 </div>
         </div>
     </div>
@@ -257,7 +249,7 @@
 </section>
 
 <footer>
-      <div class="art">
+    <div class="art">
         <div class="content">
           <section>
             <header>Company</header>
@@ -292,14 +284,12 @@
           <strong>PT JULIA MULTIMEDIA NUSANTARA</strong>
         </div>
       </div>
-    </footer>
+</footer>
 
-<!-- BAGIAN SCRIPT DAN SWEET ALERT-->
-
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-
-    <script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<!-- Bagian Script dan Sweet Alert -->
+<script>
     // Menampilkan SweetAlert saat tautan "Paket" diklik
     document.querySelector('a[href="paket"]').addEventListener('click', function(event) {
         event.preventDefault(); // Mencegah tautan berpindah ke halaman "paket"
@@ -463,7 +453,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script src="{{ asset('js/particles.js') }}"></script>
 
-
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-providers/leaflet-providers.js"></script>
 
@@ -500,7 +489,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.carousel').carousel();
     });
 </script>
-
 
 </body>
 </html>
