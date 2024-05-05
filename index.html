@@ -58,7 +58,7 @@
                     <a class="nav-link poppins-medium" href="#keunggulan">KEUNGGULAN</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link poppins-medium" href="#kontak">CONTACT</a>
+                    <a class="nav-link poppins-medium" href="contact.html">CONTACT</a>
                 </li>
                 <button class="btn-login">Login</button>
             </ul>
@@ -288,102 +288,7 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<!-- Bagian Script dan Sweet Alert -->
-<script>
-    // Menampilkan SweetAlert saat tautan "Paket" diklik
-    document.querySelector('a[href="paket"]').addEventListener('click', function(event) {
-        event.preventDefault(); // Mencegah tautan berpindah ke halaman "paket"
 
-        // Menampilkan SweetAlert
-        Swal.fire({
-            title: 'Pilihan Paket Internet',
-            html: `
-        <section id="paket" class="mb-5">
-          <p></p>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-4 m-15px-tb">
-                <table class="table text-center table-bordered rounded-0">
-                  <tbody>
-                    <tr>
-                      <td>Home 1</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Rp200.000/bulan</strong></td>
-                    </tr>
-                    <tr>
-                      <td>30MBPS</td>
-                    </tr>
-                    <tr>
-                      <td>Unlimited FUP</td>
-                    </tr>
-                    <tr>
-                      <td>Support 24/7</td>
-                    </tr>
-                    <tr>
-                      <td><button class="btn btn-primary">Beli</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-md-6 col-lg-4 m-15px-tb">
-                <table class="table text-center table-bordered rounded">
-                  <tbody>
-                    <tr>
-                      <td>Home 2</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Rp300.000/bulan</strong></td>
-                    </tr>
-                    <tr>
-                      <td>50MBPS</td>
-                    </tr>
-                    <tr>
-                      <td>Unlimited FUP</td>
-                    </tr>
-                    <tr>
-                      <td>Support 24/7</td>
-                    </tr>
-                    <tr>
-                      <td><button class="btn btn-primary">Beli</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-md-6 col-lg-4 m-15px-tb">
-                <table class="table text-center table-bordered rounded">
-                  <tbody>
-                    <tr>
-                      <td>Home 3</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Rp400.000/bulan</strong></td>
-                    </tr>
-                    <tr>
-                      <td>100MBPS</td>
-                    </tr>
-                    <tr>
-                      <td>Unlimited FUP</td>
-                    </tr>
-                    <tr>
-                      <td>Support 24/7</td>
-                    </tr>
-                    <tr>
-                      <td><button class="btn btn-primary">Beli</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-      `,
-            showCloseButton: true, // Menampilkan tombol close
-            showConfirmButton: false,
-            width: '90%', // Menentukan lebar SweetAlert
-        });
-    });
-    </script>
 
     <!-- Script untuk navbar -->
     <script>
@@ -399,62 +304,6 @@ window.addEventListener('scroll', function() {
     console.log('Scrolled:', scrollPosition);
 });
 </script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Mendapatkan elemen tautan area
-    var areaLink = document.getElementById('areaco');
-
-    // Menambahkan event listener untuk saat tautan diklik
-    areaLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Menghentikan perilaku default dari tautan
-
-        // Menampilkan SweetAlert dengan konten HTML khusus (peta Google Maps)
-        Swal.fire({
-            title: "Coverage Area",
-            html: '<div id="map" style="width: 100%; height: 300px;"></div>',
-            showCancelButton: true,
-            showConfirmButton: false,
-            cancelButtonText: "Close",
-            width: '80%', // Menyesuaikan lebar SweetAlert
-            height: '80%',
-            onOpen: function() {
-                // Memuat peta Google Maps setelah SweetAlert terbuka
-                loadGoogleMaps();
-            }
-        });
-    });
-
-    // Fungsi untuk memuat peta Google Maps
-    function loadGoogleMaps() {
-        // Membuat peta Google Maps yang terfokus pada Makassar
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -5.147665, lng: 119.432731 }, // Koordinat untuk Makassar
-            zoom: 12 // Perbesar sejumlah ini
-        });
-
-        // Membuat penanda untuk lokasi Makassar
-        var marker = new google.maps.Marker({
-            position: { lat: -5.147665, lng: 119.432731 },
-            map: map,
-            title: "Makassar, Sulawesi Selatan, Indonesia"
-        });
-    }
-});
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-<!-- Memuat pustaka Google Maps JavaScript API secara asinkron -->
-<script src="https://maps.googleapis.com/maps/api/js?callback=loadGoogleMaps&libraries=&v=weekly"></script>
-
-
-<script src="{{ asset('js/particles.js') }}"></script>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet-providers/leaflet-providers.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

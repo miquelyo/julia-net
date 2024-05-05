@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/login', function (){
     return view('layouts/login');
 });
+
+Route::get('/contact', 'ContactController@index')->name('contact');
+
+Route::get('/', 'AppController@index')->name('app');
+
+
